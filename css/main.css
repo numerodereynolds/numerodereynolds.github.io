@@ -51,6 +51,7 @@ img{
 }
 .custom-toggler.navbar-toggler {
     border: none;
+    margin-left: -20px;
 }
 .custom-toggler .navbar-toggler-icon {
     background-image: url("numerodereynolds_logo.svg");
