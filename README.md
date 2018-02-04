@@ -15,4 +15,4 @@ In this file, I will explain how this project is organized:
     
     - __post.html:__ This file will be the structure for each page that contains a post (in *_posts/*). Note that this file calls the *_layout/default.html* file, so when we use it we are using as well the *_layout/default.html* file.
     
-   - __\_posts/:__ 
+   - __\_posts/:__ This folder contains all the files (*.md* files) which are the posts that will appear on the site. Every single *.md* file should contain an header that calls the *\_layouts/post.html* layout.
