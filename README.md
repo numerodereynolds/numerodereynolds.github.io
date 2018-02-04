@@ -5,7 +5,7 @@ In this file, I will explain how this project is organized:
 
   - .gitignore : This file says to git to ignore '_site' directory that Jekyll will generate each time it is committed. Because this directory and all the files inside are written each time they are committed, I do not want this directory under version control.
   
-  - .config.yml : This file tells Jekyll the name of my site ("número de Reynolds") and the version of Markdown I'm using ("karmdown").
+  - .config.yml : This file tells Jekyll the name of my site ("número de Reynolds") and the version of Markdown I'm using (*karmdown*).
   
   - index.html: This file gives the structure of the feed page, the one that will be acessed when people enter the main url.
   
