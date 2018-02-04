@@ -1,5 +1,5 @@
 # numerodereynolds
-personal blog
+### personal blog
 
 In this file, I will explain how this project is organized:
 
