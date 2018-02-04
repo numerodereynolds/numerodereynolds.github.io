@@ -49,3 +49,9 @@ ul.posts li {
 img{
     max-width:600px;
 }
+.custom-toggler.navbar-toggler {
+    border: none;
+}
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("numerodereynolds_logo.svg");
+}
