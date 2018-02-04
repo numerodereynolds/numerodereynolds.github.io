@@ -7,6 +7,8 @@ In this file, I will explain how this project is organized:
   
   - .config.yml : This file tells Jekyll the name of my site ("número de Reynolds") and the version of Markdown I'm using ("karmdown").
   
+  - index.html: This file gives the structure of the feed page, the one that will be accessed when people enter the main url.
+  
   - /layouts : This folder is it where all the files that do the layout of my site pages will be placed.
       
-    - default.html : This is my main layout. This file contains repeated elements on all pages, like \<head> or <footer> tags. This file makes the maintenance of my site much easier because every time I want to change anything on it (i.e., something on <head> or another code placed in this file) it will appear on every page.
+    - default.html : This is my main layout. This file contains repeated elements on all pages, like \<head> or \<footer> tags. This file makes the maintenance of my site much easier because every time I want to change anything on it (i.e., something on <head> or another code placed in this file) it will appear on every page that loads it.
