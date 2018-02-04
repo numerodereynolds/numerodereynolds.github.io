@@ -1,4 +1,4 @@
-# numerodereynolds ![alt text](https://github.com/numerodereynolds/numerodereynolds.github.io/blob/master/images/numerodereynolds_logo.svg)
+# numerodereynolds
 ### personal blog
 
 In this file, I will explain how this project is organized:
