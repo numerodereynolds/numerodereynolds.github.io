@@ -1,2 +1,3 @@
 name: número de Reynolds
 markdown: kramdown
+permalink: /blog/:year/:month/:day/:title
