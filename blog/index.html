@@ -7,7 +7,7 @@ title: o blog
 	<div class="container-fluid">
 
 		{% for post in site.posts %}
-			<span>{{ post.date | date_to_string }}</span> <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+			<a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <span style="font-size: 10px">{{ post.date | date_to_string }}</span> 
 			<br>
 		{% endfor %}
 
