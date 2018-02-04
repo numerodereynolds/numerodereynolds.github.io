@@ -7,7 +7,7 @@ In this file, I will explain how this project is organized:
   
   - .config.yml : This file tells Jekyll the name of my site ("número de Reynolds") and the version of Markdown I'm using ("karmdown").
   
-  - index.html: This file gives the structure of the feed page, the one that will be accessed when people enter the main url.
+  - index.html: This file gives the structure of the feed page, the one that will be acessed when people enter the main url.
   
   - /layouts : This folder is it where all the files that do the layout of my site pages will be placed.
       
