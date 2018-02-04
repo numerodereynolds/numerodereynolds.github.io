@@ -1,4 +1,4 @@
-# numerodereynolds
+# numerodereynolds ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
 ### personal blog
 
 In this file, I will explain how this project is organized:
