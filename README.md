@@ -9,4 +9,4 @@ In this file, I will explain how this project is organized:
   
   - /layouts : This folder is it where all the files that do the layout of my site pages will be placed.
       
-        - default.html : This is my main layout. This file contains repeated elements on all pages, like <head> or <footer> tags.
+    - default.html : This is my main layout. This file contains repeated elements on all pages, like <head> or <footer> tags.
