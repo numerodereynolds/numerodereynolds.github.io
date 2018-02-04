@@ -1,9 +1,10 @@
 body {
     margin: 100px 60px 0px 0px; /*top x y right*/
     width: 100%;
+    font-family: 'Open Sans';
 }
 nav ul, footer ul {
-    font-family:'Open Sans','Helvetica', 'Arial', 'Sans-Serif';
+    font-family:'Open Sans', sans-serif;
     padding: 0px;
     list-style: none;
     font-weight: bold;
