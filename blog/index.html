@@ -3,12 +3,15 @@ layout: default
 title: o blog
 ---
 
-	<h3>{{ page.title }}</h3>
-	<div class="container-fluid">
+<h3>{{ page.title }}</h3>
 
-		{% for post in site.posts %}
+<div class="container-fluid">
+
+	{% for post in site.posts %}
+		{% if post.tag contains 'post' %}
 			<a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <span style="font-size: 10px">{{ post.date | date: "%d-%m-%Y" }}</span> 
 			<br>
-		{% endfor %}
+		{% endif %}
+	{% endfor %}
 
-	</div>
+</div>

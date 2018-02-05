@@ -44,6 +44,10 @@ ul{
 }
 img{
     max-width:600px;
+    border-radius: 0px;
+}
+.image_feed{
+    pointer-events: none;
 }
 .custom-toggler.navbar-toggler {
     border: none;
@@ -51,4 +55,21 @@ img{
 }
 .custom-toggler .navbar-toggler-icon {
     background-image: url("numerodereynolds_logo.svg");
+}
+
+@media (min-width: 576px) {
+    .card-columns {
+        column-count: 1;
+    }
+}
+
+@media (min-width: 768px) {
+    .card-columns {
+        column-count: 2;
+    }
+}
+
+.card{
+    border: none;
+    border-radius: 0px;
 }
