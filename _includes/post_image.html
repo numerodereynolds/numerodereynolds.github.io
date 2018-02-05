@@ -1,12 +1,12 @@
-<div class="card">
+<div class="card p3">
 	<img class="card-img-top img-fluid" src="{{ post.img }}" alt="Card image cap">
-	<div class="card-block">
-			<h4 class="card-title">{{ post.title }}</h4>
-			<a class="card-text" href="{{ post.url }}">{{ post.description }}</a>
-			<p class="card-text">
-				<small class="text-muted" style="font-size:10px">
-					{{ post.date | date: "%a %d-%m-%Y" }}
-				</small>
-			</p>
-		</div>
+	<div class="card-body">
+		<h4 class="card-title">{{ post.title }}</h4>
+		<a class="card-text" href="{{ post.url }}">{{ post.description }}</a>
+		<p class="card-text">
+			<small class="text-muted" style="font-size:10px">
+				{{ post.date | date: "%a %d-%m-%Y" }}
+			</small>
+		</p>
+	</div>
 </div>

@@ -2,7 +2,7 @@ body {
     margin: 100px 60px 0px 0px; /*top x y right*/
     width: 100%;
     font-family: 'Open Sans';
-    font-size: 20px;
+    font-size: 15px;
 }
 nav ul, footer ul {
     font-family:'Open Sans', sans-serif;
@@ -69,7 +69,7 @@ img{
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 900px) {
     .card-columns {
         column-count: 3;
     }
