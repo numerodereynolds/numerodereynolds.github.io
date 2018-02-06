@@ -1,4 +1,9 @@
 <div class="card" style="width: 18rem;">
+	{% if post.img == '' %}
+
+	{% else %}
+		<img class="card-img-top img-fluid image_feed" src="{{ post.img }}" alt="Card image cap">
+	{% endif %}
 	<div class="card-block">
 		<h5 class="card-title">{{ post.title }}</h5>
 		<a class="card-text" href="{{ post.url }}">{{ post.description }}</a>
