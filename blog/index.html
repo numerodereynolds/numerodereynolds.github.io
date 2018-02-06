@@ -7,7 +7,7 @@ title: o blog
 <div class="card-columns">
 	{% for post in site.posts %} 
 		{% if post.tag contains 'post' %} 
-			{% include post_text.html %} 
+			{% include card_text.html %} 
 		{% endif %}
 	{% endfor %}
 </div>

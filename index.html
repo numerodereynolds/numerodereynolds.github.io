@@ -12,10 +12,10 @@ title: número de Reynolds
 		<div class="card-columns">
 			{% for post in site.posts %} 
 				{% if post.tag contains 'post' %} 
-					{% include post_text.html %} 
+					{% include card_text.html %} 
 				{% endif %} 
 				{% if post.tag contains 'picture' %} 
-					{% include post_image.html %} 
+					{% include card_image.html %} 
 				{% endif %} 
 			{% endfor %}
 		</div>

@@ -11,9 +11,12 @@ layout: default
         <h3>{{ page.title }}</h3>
         <p id="meta">{{ page.date | date: "%A %d-%m-%Y" }}</p>
 
+        {% include post_image.html %}
+
         <div class="post">
           {{ content }}
         </div>
+
     </div>
     <div class="col">
       
