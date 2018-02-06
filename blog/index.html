@@ -3,12 +3,11 @@ layout: default
 title: o blog
 ---
 
-<div class="container">
-	<div class="card-columns">
-		{% for post in site.posts %} 
-			{% if post.tag contains 'post' %} 
-				{% include post_text.html %} 
-			{% endif %}
-		{% endfor %}
-	</div>
+
+<div class="card-columns">
+	{% for post in site.posts %} 
+		{% if post.tag contains 'post' %} 
+			{% include post_text.html %} 
+		{% endif %}
+	{% endfor %}
 </div>
