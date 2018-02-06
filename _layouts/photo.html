@@ -8,14 +8,10 @@ layout: default
 
     </div>
     <div class="col-md-8 col-lg-6 mx-auto">
-        <h3>{{ page.title }}</h3>
-        <p id="meta">{{ page.date | date: "%A %d-%m-%Y" }}</p>
 
         {% include post_image.html %}
 
-        <div class="post">
-          {{ content }}
-        </div>
+        <p id="meta">{{ page.date | date: "%a | %d-%m-%Y" }} | {{ page.description }}</p>
 
     </div>
     <div class="col">

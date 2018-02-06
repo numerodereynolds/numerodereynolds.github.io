@@ -1,11 +1,11 @@
-<div class="card p3">
-	<img class="card-img-top img-fluid image_feed" src="{{ post.img }}" alt="Card image cap">
+<div class="card p3" style="max-width: 350px">
+	<a class="card-text" href="{{ post.url }}">
+		<img class="card-img-top img-fluid" src="{{ post.img }}" alt="">
+	</a>
 	<div class="card-block">
-		<h5 class="card-title">{{ post.title }}</h5>
-		<a class="card-text" href="{{ post.url }}">{{ post.description }}</a>
 		<p class="card-text">
 			<small class="text-muted" style="font-size:10px">
-				{{ post.date | date: "%a %d-%m-%Y" }}
+				{{ post.date | date: "%a | %d-%m-%Y" }} | {{ post.description }}
 			</small>
 		</p>
 	</div>

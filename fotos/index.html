@@ -1,0 +1,13 @@
+---
+layout: default
+title: fotos
+---
+
+
+<div class="card-columns col-xs-auto mx-auto">
+	{% for post in site.posts %} 
+		{% if post.tag contains 'picture' %} 
+			{% include card_image.html %} 
+		{% endif %}
+	{% endfor %}
+</div>
