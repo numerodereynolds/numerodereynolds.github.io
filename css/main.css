@@ -68,13 +68,13 @@ img{
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
     .card-columns {
         column-count: 2;
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1000px) {
     .card-columns {
         column-count: 3;
     }
