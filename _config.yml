@@ -1,3 +1,5 @@
 name: número de Reynolds
 markdown: kramdown
 permalink: :year/:month/:title
+plugins:
+ - jekyll-coffeescript
