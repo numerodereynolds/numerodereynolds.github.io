@@ -1,4 +1,4 @@
-<div class="card" style="max-width: 350px; border-radius:0px">
+<div class="card" style="max-width: 350px; margin-bottom: 30px">
 	{% if post.img == '' %}
 
 	{% else %}
@@ -14,7 +14,9 @@
 					{{ post.date | date: "%a | %d-%m-%Y" }}
 				</small>
 			<p>
-			{{ post.description }}
+			<p style="font-size:13px; color:gray; margin-top:-10px">
+				{{ post.description }}
+			</p>
 		</a>
 	</div>
 </div>
