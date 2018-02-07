@@ -3,8 +3,8 @@ layout: default
 title: o blog
 ---
 
-<div class="container" style="margin-bottom:100px">
-	<div class="card-columns col-xs-auto mx-auto">
+<div class="container text-center" style="margin-bottom:100px">
+	<div class="card-columns">
 		{% for post in site.posts %} 
 			{% if post.tag contains 'post' %} 
 				{% include card_text.html %} 

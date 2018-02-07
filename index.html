@@ -9,8 +9,8 @@ title: número de Reynolds
 	
 	<!-- Anything that comes after this comment will be placed where it says "{{ content }}" on the _layout/default.html file.-->
 
-	<div class="container" style="margin-bottom:100px">
-		<div class="card-columns col-xs-auto mx-auto">
+	<div class="container text-center" style="margin-bottom:100px">
+		<div class="card-columns col-xs-auto">
 			{% for post in site.posts %} 
 				{% if post.tag contains 'post' %} 
 					{% include card_text.html %} 
