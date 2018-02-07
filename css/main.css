@@ -33,7 +33,7 @@ h1 {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 p {
-    line-height: 1.4em;
+    line-height: 1.4;
     color: #333;
 }
 #footer {
