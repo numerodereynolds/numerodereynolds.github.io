@@ -32,26 +32,3 @@ ajaxhttp.onreadystatechange = function(){
 ajaxhttp.send(null);
 
 //
-            "FCB 3-2 SCP (pré-época)",
-            "OM 2-1 SCP (pré-época)",
-            "SCP 2-1 ASMFC (pré-época)",
-            "VSC 3-0 SCP (pré-época)",
-            "SCP 1-0 ACFF (pré-época)",
-            "CDA 0-2 SCP (Liga NOS)",
-            "SCP 1-0 VFC (Liga NOS)",
-            "SCP 0-0 FCSB (Champions League)",
-            "VSC 0-5 SCP (Liga NOS)",
-            "FCSB 1-5 SCP (Champions League)",
-            "SCP 2-1 GDEP (Liga NOS)",
-            "CDF 2-3 SCP (Liga NOS)",
-            "OFC 2-3 SCP (Champions League)",
-            "SCP 2-0 CDT (Liga NOS)",
-            "SCP 0-0 CSM (Taça da Liga)",
-            "MFC 1-1 SCP (Liga NOS)",
-            "SCP 0-1 FCB (Champions League)",
-            "SCP 0-0 FCP (Liga NOS)",
-            "ARCO 2-4 SCP (Taça de Portugal)",
-            "JFC 2-1 SCP (Champions League)",
-            "SCP 5-1 GDC (Liga NOS)",
-            "RAFC 0-1 SCP (Liga NOS)",
-            "SCP 1-1 JFC (Champions League)"]
