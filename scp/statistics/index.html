@@ -3,22 +3,52 @@ layout: scp
 title: estatísticas
 ---
 
+<script>
+
+    var win_color = "rgba(55, 100, 103, 1)";
+    var draw_color = "rgba(248, 241, 150, 1)";
+    var lose_color = "rgba(255, 162, 153, 1)";
+
+    var jogos = new Array();
+    var valor_y = new Array();
+    var cor = new Array();
+
+    var resultados = {{ site.data.resultados_2017_2018 | jsonify }};
+    console.log(resultados.length);
+
+    for ( i = 0; i < resultados.length; i++ ){
+
+        jogos[i] = resultados[i].resultado + " (" + resultados[i].competicao + ")";
+        valor_y[i] = 1;
+
+        if( resultados[i].tipo == "W" ){
+            cor[i] = win_color;
+        }
+        else if( resultados[i].tipo == "D" ){
+            cor[i] = draw_color;
+        }
+        else if( resultados[i].tipo == "L" ){
+            cor[i] = lose_color;
+        };
+
+    };
+
+
+
+</script>
+
 <div class="container text-center">
-    <div class="row" style="margin-bottom:30px">
-        <div class="col">
-            Liga NOS
-        </div>
-    </div>
     <div class="row">
-        <div class="text-left col-xs-1 col-sm-2 col-md-3">
+        <div class="text-left col-xs-1 col-sm-2">
             
         </div>
         <div class="col text-left col-xs-10">
-            classificação: 3º lugar
-            <canvas id="myChart" width="400" height="400"></canvas>
+            <canvas id="ranking" width="400" height="30"></canvas>
         </div>
-        <div class="text-left col-xs-1 col-sm-2 col-md-3">
+        <div class="text-left col-xs-1 col-sm-2">
             
         </div>
+    </div>
+    <div class="row" style="height:30px">
     </div>
 </div>
