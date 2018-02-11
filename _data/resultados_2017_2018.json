@@ -45,5 +45,6 @@
     {"resultado_casa":"1", "resultado_visitante":"1", "casa":"VFC", "visitante":"SCP", "tipo":"W", "competicao":"Taça da Liga - final", "data":"2017-01-27"},
     {"resultado_casa":"1", "resultado_visitante":"0", "casa":"SCP", "visitante":"VSC", "tipo":"W", "competicao":"Liga NOS", "data":"2017-01-31"},
     {"resultado_casa":"2", "resultado_visitante":"0", "casa":"GDEP", "visitante":"SCP", "tipo":"L", "competicao":"Liga NOS", "data":"2017-02-04"},
-    {"resultado_casa":"1", "resultado_visitante":"0", "casa":"FCP", "visitante":"SCP", "tipo":"L", "competicao":"Taça de Portugal", "data":"2017-02-07"}
+    {"resultado_casa":"1", "resultado_visitante":"0", "casa":"FCP", "visitante":"SCP", "tipo":"L", "competicao":"Taça de Portugal", "data":"2017-02-07"},
+    {"resultado_casa":"2", "resultado_visitante":"0", "casa":"SCP", "visitante":"CDF", "tipo":"W", "competicao":"Liga NOS", "data":"2017-02-11"}
 ]
