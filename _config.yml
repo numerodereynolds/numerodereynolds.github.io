@@ -1,7 +1,7 @@
 name: número de Reynolds
 markdown: kramdown
 permalink: :year/:month/:title
-main_image: images/numerodereynolds_logo.svg
+main_image: "images/numerodereynolds_logo.svg"
 description: "descrição awesome"
 plugins:
  - jekyll-coffeescript
