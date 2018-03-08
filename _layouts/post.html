@@ -10,13 +10,13 @@ layout: default
     <div class="col-md-8 col-lg-6">
         <h3>{{ page.title }}</h3>
 
-        {% include post_image.html %}
-
         <small class="text-muted" >
           <p id="meta">{{ page.date | date: "%A %d-%m-%Y" }} | {{ page.source }}</p>
         </small>
 
-        <div class="post" style="margin-top:50px">
+        {% include post_image.html %}
+
+        <div class="post" style="margin-top:10px">
           {{ content }}
         </div>
 
@@ -27,16 +27,18 @@ layout: default
   </div>
 </div>
 
-<div class="container" style="margin-bottom:100px">
+<div class="container" style="margin-top:100px; margin-bottom:100px">
   <div class="row justify-content-md-center">
     <div class="col">
+      
+    </div>
+    <div class="col-md-8 col-lg-6 d-flex justify-content-center">
+
+      {% include share_page.html %}
 
     </div>
-    <div class="col-md-8 col-lg-6">
-      {% include share_page.html %}
-    </div>
     <div class="col">
-      
+    
     </div>
   </div>
 </div>
