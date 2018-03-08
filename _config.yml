@@ -1,5 +1,9 @@
 name: número de Reynolds
 markdown: kramdown
 permalink: :year/:month/:title
+image: images/numerodereynolds_logo.svg
 plugins:
  - jekyll-coffeescript
+
+#social
+twitter_username: duartedrumond
