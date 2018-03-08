@@ -14,7 +14,6 @@
     <title>{{ page.title }}</title>
 
     <meta property="og:title" content="número de Reynolds" />
-    <meta property="og:image" content="https://numerodereynolds.github.io/images/numerodereynolds_logo.png">
 
      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.js"></script>
     
@@ -45,4 +44,22 @@
             <meta name="twitter:image" content="{{ site.main_image }}">
         {% endif %}
     <!-- end of Twitter cards -->
+
+    <!-- WhatsApp -->
+        <meta name="twitter:site"    content="@{{ site.twitter_username }}">
+        <meta name="twitter:creator" content="@{{ page.author }}">
+        <meta name="twitter:title"   content="{{ page.title }}">
+
+        {% if page.description %}
+            <meta property="og:description" content="{{ page.description }}">
+        {% else %}
+            <meta property="og:description" content="{{ site.main_description }}">
+        {% endif %}
+
+        {% if page.image %}
+            <meta property="og:image" content="{{ page.image }}">
+        {% else %}
+            <meta property="og:image" content="{{ site.main_image }}">
+        {% endif %}
+    <!-- end of WhatsApp cards -->
 </head>
