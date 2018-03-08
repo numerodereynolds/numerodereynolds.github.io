@@ -12,10 +12,8 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
     <title>{{ page.title }}</title>
-    <meta name="description" content="este é um blog pessoal que neste momento não tem qualquer objectivo a não ser pôr o seu dono a aprender a fazê-lo! divirtam-se">
 
     <meta property="og:title" content="número de Reynolds" />
-    <meta property="og:image" content="/images/numerodereynolds_logo.png">
 
      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.js"></script>
     
@@ -35,7 +33,7 @@
         {% if page.description %}
             <meta name="twitter:description" content="{{ page.description }}">
         {% else %}
-            <meta name="twitter:description" content="{{ site.description }}">
+            <meta name="twitter:description" content="{{ site.main_description }}">
         {% endif %}
 
         {% if page.image %}
