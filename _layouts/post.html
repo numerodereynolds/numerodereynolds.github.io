@@ -8,13 +8,13 @@ layout: default
 
     </div>
     <div class="col-md-8 col-lg-6">
+        {% include post_image.html %}
+
         <h3>{{ page.title }}</h3>
 
         <small class="text-muted" >
           <p id="meta">{{ page.date | date: "%A %d-%m-%Y" }} | {{ page.source }}</p>
         </small>
-
-        {% include post_image.html %}
 
         <div class="post" style="margin-top:10px">
           {{ content }}
