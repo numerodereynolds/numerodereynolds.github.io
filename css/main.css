@@ -61,6 +61,11 @@ img{
     height: 50px;
 }
 
+/*removes the outline when the menu (small screens) is clicked and active*/
+    .custom-toggler:focus {
+        outline: 0;
+    }
+
 @media (min-width: 576px) {
     .card-columns {
         column-count: 1;
