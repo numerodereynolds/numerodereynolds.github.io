@@ -2,7 +2,8 @@ body {
     margin: 100px 0px 0px 0px; /*top x y right*/
     width: 100%;
     font-family: 'Open Sans';
-    font-size: 15px;
+    font-size: 120%;
+    line-height: 2;
 }
 
 .navbar{
