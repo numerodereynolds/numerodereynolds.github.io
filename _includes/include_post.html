@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col">
+      </div>
+      <div class="col-md-10 col-lg-7">
+          {% include post_image.html %}
+  
+          <p style="width:100%; font-weight:900; font-size:40px">{{ page.title }}</p>
+  
+          <small class="text-muted" >
+            <p id="meta">{{ page.date | date: "%d.%m.%y" }} | {{ page.source }}</p>
+          </small>
+  
+          <div class="post" style="margin-top:10px; font-size: 15px" align="justify">
+            {{ content }}
+          </div>
+      </div>
+      <div class="col">
+      </div>
+    </div>
+  </div>

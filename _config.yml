@@ -5,6 +5,7 @@ main_image: "https://numerodereynolds.github.io/images/numerodereynolds_logo.png
 main_description: "(mais) um blog pessoal"
 plugins:
  - jekyll-coffeescript
+ - jekyll-paginate
 
 #social
 twitter_username: duartedrumond

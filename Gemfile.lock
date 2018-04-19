@@ -252,6 +252,7 @@ DEPENDENCIES
   coffee-script
   github-pages
   jekyll-assets
+  jekyll-paginate
   sass
   uglifier
 
