@@ -1,0 +1,16 @@
+<div class="card" style="max-width: 350px; margin-bottom: 30px">
+        {% if post.img == '' %}
+    
+        {% else %}
+            <a class="card-text" href="{{ post.url }}">
+                <img class="card-img-top" src="{{ post.image }}" alt="">
+            </a>
+        {% endif %}
+        <div class="card-block text-left">
+            <p class="card-text">
+                <small class="text-muted" style="font-size:10px">
+                    {{ post.date | date: "%d.%m.%y" }} | {{ post.title }}
+                </small>
+            </p>
+        </div>
+    </div>

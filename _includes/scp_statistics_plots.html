@@ -1,0 +1,147 @@
+<script>
+
+    var win_color = "rgba(11, 137, 108, 1)";
+    var draw_color = "rgba(245, 238, 87, 1)";
+    var lose_color = "rgba(255, 162, 153, 1)";
+
+    var resultados = {{ site.data.resultados_2017_2018 | jsonify }};
+
+    var jogos_resultado = new Array();
+    var valor_y = new Array();
+    var cor = new Array();
+    var golos_marcados = 0;
+    var golos_sofridos = 0;
+
+    var j = 0;
+    var jogos_resultado_Liga_NOS = new Array();
+    var valor_y_Liga_NOS = new Array();
+    var cor_Liga_NOS = new Array();
+    var golos_marcados_Liga_NOS = 0;
+    var golos_sofridos_Liga_NOS = 0;
+    var pontos = 0;
+
+    var k = 0;
+    var jogos_resultado_Liga_NOS_casa = new Array();
+    var valor_y_Liga_NOS_casa = new Array();
+    var cor_Liga_NOS_casa = new Array();
+    var golos_marcados_Liga_NOS_casa = 0;
+    var golos_sofridos_Liga_NOS_casa = 0;
+    var pontos_casa = 0;
+
+    var m = 0;
+    var jogos_resultado_Liga_NOS_fora = new Array();
+    var valor_y_Liga_NOS_fora = new Array();
+    var cor_Liga_NOS_fora = new Array();
+    var golos_marcados_Liga_NOS_fora = 0;
+    var golos_sofridos_Liga_NOS_fora = 0;
+    var pontos_fora = 0;
+
+
+    for (var i = 0; i < resultados.length; i++) {
+
+        jogos_resultado[i] = resultados[i].casa + " " + resultados[i].resultado_casa + "-" + resultados[i].resultado_visitante + " " + resultados[i].visitante + " (" + resultados[i].competicao + ")";
+
+        valor_y[i] = 1;
+
+        if (resultados[i].tipo == "W") {
+            cor[i] = win_color;
+        }
+        else if (resultados[i].tipo == "D") {
+            cor[i] = draw_color;
+        }
+        else if (resultados[i].tipo == "L") {
+            cor[i] = lose_color;
+        };
+
+        if (resultados[i].casa == "SCP") {
+            golos_marcados = golos_marcados + parseInt(resultados[i].resultado_casa);
+            golos_sofridos = golos_sofridos + parseInt(resultados[i].resultado_visitante);
+        }
+        else if (resultados[i].visitante == "SCP") {
+            golos_marcados = golos_marcados + parseInt(resultados[i].resultado_visitante);
+            golos_sofridos = golos_sofridos + parseInt(resultados[i].resultado_casa);
+        };
+
+        if (resultados[i].competicao == 'Liga NOS') {
+
+            jogos_resultado_Liga_NOS[j] = resultados[i].casa + " " + resultados[i].resultado_casa + "-" + resultados[i].resultado_visitante + " " + resultados[i].visitante + " (" + resultados[i].competicao + ")";
+
+            valor_y_Liga_NOS[j] = 1;
+
+            if (resultados[i].tipo == "W") {
+                cor_Liga_NOS[j] = win_color;
+                pontos = pontos + 3;
+            }
+            else if (resultados[i].tipo == "D") {
+                cor_Liga_NOS[j] = draw_color;
+                pontos = pontos + 1;
+            }
+            else if (resultados[i].tipo == "L") {
+                cor_Liga_NOS[j] = lose_color;
+            };
+
+            if (resultados[i].casa == "SCP") {
+                golos_marcados_Liga_NOS = golos_marcados_Liga_NOS + parseInt(resultados[i].resultado_casa);
+                golos_sofridos_Liga_NOS = golos_sofridos_Liga_NOS + parseInt(resultados[i].resultado_visitante);
+            }
+            else if (resultados[i].visitante == "SCP") {
+                golos_marcados_Liga_NOS = golos_marcados_Liga_NOS + parseInt(resultados[i].resultado_visitante);
+                golos_sofridos_Liga_NOS = golos_sofridos_Liga_NOS + parseInt(resultados[i].resultado_casa);
+            };
+
+            if (resultados[i].casa == 'SCP') {
+
+                jogos_resultado_Liga_NOS_casa[k] = resultados[i].casa + " " + resultados[i].resultado_casa + "-" + resultados[i].resultado_visitante + " " + resultados[i].visitante + " (" + resultados[i].competicao + ")";
+
+                valor_y_Liga_NOS_casa[k] = 1;
+
+                if (resultados[i].tipo == "W") {
+                    cor_Liga_NOS_casa[k] = win_color;
+                    pontos_casa = pontos_casa + 3;
+                }
+                else if (resultados[i].tipo == "D") {
+                    cor_Liga_NOS_casa[k] = draw_color;
+                    pontos_casa = pontos_casa + 1;
+                }
+                else if (resultados[i].tipo == "L") {
+                    cor_Liga_NOS_casa[k] = lose_color;
+                };
+
+                golos_marcados_Liga_NOS_casa = golos_marcados_Liga_NOS_casa + parseInt(resultados[i].resultado_casa);
+                golos_sofridos_Liga_NOS_casa = golos_sofridos_Liga_NOS_casa + parseInt(resultados[i].resultado_visitante);
+
+                k = k + 1;
+
+            };
+
+            if (resultados[i].visitante == 'SCP') {
+
+                jogos_resultado_Liga_NOS_fora[m] = resultados[i].casa + " " + resultados[i].resultado_casa + "-" + resultados[i].resultado_visitante + " " + resultados[i].visitante + " (" + resultados[i].competicao + ")";
+
+                valor_y_Liga_NOS_fora[m] = 1;
+
+                if (resultados[i].tipo == "W") {
+                    cor_Liga_NOS_fora[m] = win_color;
+                    pontos_fora = pontos_fora + 3;
+                }
+                else if (resultados[i].tipo == "D") {
+                    cor_Liga_NOS_fora[m] = draw_color;
+                    pontos_fora = pontos_fora + 1;
+                }
+                else if (resultados[i].tipo == "L") {
+                    cor_Liga_NOS_fora[m] = lose_color;
+                };
+
+                golos_marcados_Liga_NOS_fora = golos_marcados_Liga_NOS_fora + parseInt(resultados[i].resultado_visitante);
+                golos_sofridos_Liga_NOS_fora = golos_sofridos_Liga_NOS_fora + parseInt(resultados[i].resultado_casa);
+
+                m = m + 1;
+
+            };
+
+            j = j + 1;
+        }
+
+    }
+
+</script>

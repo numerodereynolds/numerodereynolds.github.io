@@ -8,11 +8,8 @@
 	{% endif %}
 	<div class="card-block text-left">
 		<a class="card-text" href="{{ post.url }}">
-			<p class="card-title">
-				{{ post.title }}   
-				<small class="text-muted" style="font-size:10px">
-					{{ post.date | date: "%a | %d-%m-%Y" }}
-				</small>
+			<p class="card-title" style="font-weight:900">
+				{{ post.title }} 
 			<p>
 			<p style="font-size:13px; color:gray; margin-top:-10px">
 				{{ post.description }}

@@ -3,12 +3,18 @@ layout: default
 title: o blog
 ---
 
-<div class="container text-center" style="margin-bottom:100px">
-	<div class="card-columns">
-		{% for post in site.posts %} 
-			{% if post.tag contains 'post' %} 
-				{% include card_text.html %} 
-			{% endif %}
-		{% endfor %}
+<div class="container-fluid sticky-bottom">
+		<div class="row">
+			<div class="col-1 col-xs-1">	 
+			</div>
+			<div class="col-xs-auto mx-auto">
+					{% for post in site.posts %} 
+					{% if post.tag contains 'post' %} 
+						{% include card_text_2.html %} 
+					{% endif %}
+					{% endfor %}
+			</div>
+			<div class="col-1 col-xs-1">	 
+			</div>
+		</div>
 	</div>
-</div>

@@ -1,18 +1,19 @@
 Chart.defaults.global.legend.display = false;
 
-var ctx = document.getElementById("ranking");
+/*var ctx = document.getElementById("ranking");
 var myChart = new Chart(ctx, {
-    type: 'bar',
+    type: 'bubble',
     data: {
-        labels: jogos_resultado,
+        labels: ['jogos resultado'],
         datasets: [{
-            label: '',
-            data: valor_y,
-            backgroundColor: cor,
-            borderColor: [
-                'rgba(255, 162, 153, 1)'
-            ],
-            borderWidth: 0,
+            label: ["China", "Estoril"],
+            backgroundColor: ["rgba(255,221,50,0.2)", "rgba(255,221,50,0.2)"],
+            borderColor: "rgba(255,221,50,1)",
+            data: [{
+                x: [0, 15],
+                y: [15, 15],
+                r: [15, 15]
+            }]
         }],
         pointRadius: 0,
     },
@@ -38,15 +39,6 @@ var myChart = new Chart(ctx, {
         },
         tooltips: {
             enabled: true,
-            callbacks: {
-                // use label callback to return the desired label
-                label: function (tooltipItem, data) {
-                    return tooltipItem.xLabel;
-                },
-                title: function (tooltipItem, data) {
-                    return;
-                },
-            },
             displayColors: false,
 
         },
@@ -225,6 +217,4 @@ var myChart = new Chart(ctx, {
 
 document.getElementById("pontos_fora").innerHTML = pontos_fora;
 document.getElementById("golos_marcados_Liga_NOS_fora").innerHTML = golos_marcados_Liga_NOS_fora;
-document.getElementById("golos_sofridos_Liga_NOS_fora").innerHTML = golos_sofridos_Liga_NOS_fora;
-
-console.log(pontos_fora);
+document.getElementById("golos_sofridos_Liga_NOS_fora").innerHTML = golos_sofridos_Liga_NOS_fora;*/

@@ -3,7 +3,7 @@ body {
     width: 100%;
     font-family: 'Open Sans';
     font-size: 120%;
-    line-height: 2;
+    line-height: 4;
 }
 
 .navbar{
@@ -68,7 +68,7 @@ img{
         outline: 0;
     }
 
-@media (min-width: 238px) {
+@media (min-width: 200px) {
     .card-columns {
         column-count: 1;
     }
