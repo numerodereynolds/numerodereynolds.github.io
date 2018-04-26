@@ -3,18 +3,54 @@ layout: default
 title: o blog
 ---
 
-<div class="container-fluid sticky-bottom">
-		<div class="row">
-			<div class="col-1 col-xs-1">	 
-			</div>
-			<div class="col-xs-auto mx-auto">
-					{% for post in site.posts %} 
-					{% if post.tag contains 'post' %} 
-						{% include card_text_2.html %} 
-					{% endif %}
-					{% endfor %}
-			</div>
-			<div class="col-1 col-xs-1">	 
+<div class="container d-none d-sm-block">
+	<div class="row" style="margin-top:-80px; margin-bottom:50px">
+		<div class="col-2">
+		</div>
+		<div class="col-xs-auto mx-auto">
+			<div class="row">
+				<div class="col-xs-auto mx-auto">
+					<a class="nav-link" href="/scp" style="color:#D1D2D4; font-size:12px; display:none">
+						<b>#scp</b>
+					</a>
+				</div>
 			</div>
 		</div>
+		<div class="col-2">
+		</div>
 	</div>
+</div>
+
+<div class="container d-sm-none">
+	<div class="row" style="margin-top:-30px;margin-bottom:50px">
+		<div class="col-2">
+		</div>
+		<div class="col-xs-auto mx-auto">
+			<div class="row">
+				<div class="col-xs-auto mx-auto">
+					<a class="nav-link" href="/scp" style="color:#D1D2D4; font-size:12px; display:none">
+						<b>#scp</b>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-2">
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid sticky-bottom">
+	<div class="row">
+		<div class="col-1 col-xs-1">
+		</div>
+		<div class="col-xs-auto mx-auto">
+			{% for post in site.posts %} 
+				{% if post.tag contains 'post' %} 
+					{% include card_text_2.html %}
+				{% endif %} 
+			{% endfor %}
+		</div>
+		<div class="col-1 col-xs-1">
+		</div>
+	</div>
+</div>
